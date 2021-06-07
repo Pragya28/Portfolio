@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pragya Jha Work Portfolio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <div class="container-fluid">
+
+    <div class="row text-center row-header">
+      <div class="col-xs-12">
+        <div class="header-col">
+          <h1>Sprint 5</h1>
+          <h2>i-LMS project</h2>
+        </div>
+        
+      </div>
+    </div>
+
+
+  <section style="margin-top:0">
+
+    <div class="row">
+      <div class="col xs-12">
+        <h1 class="text-center section-heading">Sprint Plan</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-offset-2">
+        <p>
+          In this sprint, the plan was to complete the user-stories which were incomplete in the previous sprint. Also to store the answers entered by a student and make some changes in the user-interface along with making it responsive.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section style="margin-top:0">
+
+    <div class="row">
+      <div class="col xs-12">
+        <h1 class="text-center section-heading">User Stories</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-offset-2">
+          <p>
+            In this sprint, we were continuing previous user-stories and had new stories for user-interface and data storage.
+            <ol>
+              <li> As a student, I should be able to know my score and detailed result after completion of the assessment (Continued from previous sprint). </li>
+              <li> As a student, if I refresh the page, I should remain on same page and not lose my progress (Continued from previous sprint). </li>
+              <li> As a student, I should have a user-interface for attempting the assessment which is comfortable to use. </li>
+              <li> As a student, the answers I entered should get stored somewhere. </li>
+            </ol>
+          </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section style="margin-top:0">
+
+    <div class="row">
+      <div class="col xs-12">
+        <h1 class="text-center section-heading">My Role</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-offset-2">
+          <p>
+            I concentrated on creating new user-interface for coding question in a way that it does not looks congested and a student can easily read the problem statment and has enough space to write code.
+          </p>
+          <p>
+            I initally came up with a three column layout - first for problem statment, second for code editor and third for output window, in which click on a button can expand or collapse a column.
+            <center>
+              <figure role="group">
+                <figcaption>
+                  Three column layout - with collapsable columns on button click
+                </figcaption>
+                <figure role="group">
+                  <img src="img/sprint5/3-column-all-open.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    All columns expanded
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint5/3-column-one-close.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Two columns expanded, One column collapsed
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint5/3-column-one-open.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    One column expanded, Two columns collapsed
+                  </figcaption>
+                </figure>
+              </figure>
+            </center>
+          </p>
+          <p>
+            This design was dropped because if all the columns are open then we are getting very less column width. Also the buttons also caused some confusions regarding which column is open or close. So solve that problem, I increased the size of the card in which question needs to be displayed and made a two column layout - first for problem statment and second having code editor on top and output window at bottom.
+            <center>
+              <figure role="group">
+                <figcaption>
+                  Two column layout - with collapsable columns on button click
+                </figcaption>
+                <figure role="group">
+                  <img src="img/sprint5/code-collapse.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Problem statment collapsed, Code editor expanded
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint5/code-expanded.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Problem statment expanded, Code editor collapsed
+                  </figcaption>
+                </figure>
+              </figure>
+            </center>
+          </p>
+          <p>
+            Because of changing the dimensions of the card in which questions were being displayed, the look of fill up questions also got changed a bit.
+            <center>
+              <figure role="group">
+                <img src="img/sprint5/fillup.png" alt="" width="75%" style="display: inline;">
+                <figcaption>
+                  Fill ups question with larger card dimensions
+                </figcaption>
+              </figure>
+            </center>
+          </p>
+          <p>
+            Along with design for desktop view, I also ensure that the design was responsive and can work on mobiles.
+            <center>
+              <figure role="group">
+                <figcaption>
+                  Responsive design - mobile view
+                </figcaption>
+                <figure role="group">
+                  <img src="img/sprint5/code-mobile.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Coding question mobile view
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint5/fillup-mobile.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Fill ups question mobile view
+                  </figcaption>
+                </figure>
+              </figure>
+            </center>
+          </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section style="margin-top:0">
+
+    <div class="row">
+      <div class="col xs-12">
+        <h1 class="text-center section-heading">Sprint Outcome</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-offset-2">
+          <p>
+            In this sprint, we were able to ensure that anytime the assessment is refreshed it remains on same page. We also changed the user-interface of the assessment in terms of spacing and placement of components. Lastly, we were able to store the answers written by a student for fill-ups questions in session storage.
+          </p>
+          <p>
+            Few things from this sprint which remain incomplete is giving the result of the assessment (fill-ups only) after test is finished. Some changes in the coding questions for resizing of the two columns. We also need to start working on coding assessment for the next sprint.
+          </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr>
+
+    <div class="row row-footer">
+    </div>
+
+    </div> <!-- end container -->
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
