@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 
 h1, h2, h3, h4, h5{
 	color:#4A4E69;
@@ -19,52 +23,140 @@ ul, ol {
 
 section {
 	width:100%;
-  margin: 40px 0;
+  	margin: 40px 0;
 	padding: 0 5%;
 }
 
 .section-heading {
 	text-transform: uppercase;
-  font-size: 1.6em;
+  	font-size: 1.6em;
 }
 
 hr {
 	max-width:300px;
 }
 
-
-.navbar.navbar-default {
-	background: none;
-	border: none; 
-  z-index: 1;
-}
-
-
-.navbar-default .navbar-text {
-	color:white;
-}
-
-
 .row-header {
-  padding: 10vh 10vw 0 10vw;
-  background-image: url('../img/bg.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  margin-bottom:100px;
-  display: flex;
-  align-items: center
+	padding-top: 10vh;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	margin-bottom:100px;
+	display: flex;
+	align-items: center
+}
+
+.navbar {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: left;
+	top: 0;
+	background: black;
+	border: none; 
+	z-index: 1;
+	height: 70px;
+	position: fixed;
+}
+
+.logo {
+	float: left;
+	color: white;
+	font-size: 27px;
+	font-weight: 600;
+	line-height: 70px;
+	padding-left: 60px;
+}
+
+nav ul {
+	float: right;
+	list-style: none;
+	margin-right: 50px;
+	position: relative;
+	padding: 0;
+	text-align: center;
+}
+
+nav ul li {
+	float: left;
+	margin: 0 5px;
+	display: inline-block;
+	background: black;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	line-height: 70px;
+	font-size: 18px;
+	padding: 8px 15px;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	color: cyan;
+}
+
+nav ul ul {
+	position: absolute;
+	top: 90px;
+	border-top: 3px solid cyan;
+	opacity: 0;
+	visibility: hidden;
+	transition: top .3s;
+}
+
+nav ul li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	top: 70px;
+}
+
+nav ul ul li {
+	position: relative;
+	margin: 0px;
+	width: 100px;
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid cyan;
+}
+
+nav ul ul li a {
+	line-height: 50px;
+}
+
+nav ul ul li a:hover {
+	color: cyan;
+	box-shadow: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+.btn:hover {
+    text-decoration: none;
+	background: lightblue;
+}
+
+.btn a:hover {
+	color: black;
 }
 
 .header-col {
 	position: relative;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.18);
-  bottom: -60px;
-  padding: 30px 0;
-  max-width:400px;
-  margin:auto;
+	background: rgb(255, 255, 255);
+	border-radius: 5px;
+	box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.18);
+	bottom: -60px;
+	padding: 30px 0;
+	max-width:400px;
+	margin:auto;
 }
 
 .profile-pic {
@@ -75,12 +167,12 @@ hr {
 
 .header-col h2 {
 	font-size: 1.3em;
-  margin-bottom: 20px;
-  margin-top: 0;
+  	margin-bottom: 20px;
+  	margin-top: 0;
 }
 
 .email {
-  margin-top:20px;
+  	margin-top:20px;
 }
 
 .email .glyphicon {
@@ -90,7 +182,7 @@ hr {
 
 .project-img-col img {
 	max-width: 250px;
-  margin: auto;
+  	margin: auto;
 }
 
 
@@ -105,43 +197,43 @@ hr {
 
 .tech-item {
 	margin:10px;
-  display: inline-flex;
-  align-items: center;
-  flex-direction: column;
+  	display: inline-flex;
+  	align-items: center;
+  	flex-direction: column;
 }
 
 .tech-item-text {
-	margin-top:10px;
+	margin-top: 10px;
 }
 
 .tech-item i {
-	font-size:5em;
+	font-size: 5em;
 }
 
 .tech-tool-item {
 	margin-left:15px;
-  display: inline-block;;
+  	display: inline-block;;
 }
 
 .row-footer {
 	padding: 0vh 10vw 10vw 10vw;
-	margin-top:100px;
+	margin-top: 100px;
 	background-image: url('../img/bg.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  	background-position: bottom;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
 }
 
 .footer-col {
 	position: relative;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.18);
-  top: -60px;
-  padding: 50px 0;
-  max-width:400px;
-  margin:auto;
+  	background: rgb(255, 255, 255);
+  	border-radius: 5px;
+  	box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.18);
+  	top: -60px;
+  	padding: 50px 0;
+  	max-width:400px;
+  	margin:auto;
 }
 
 .btn.outline {
@@ -178,10 +270,11 @@ figure {
 	text-align: center;
 	border: 1px;
 	margin: 5px; /* adjust as needed */
-  }
+}
+
 figure img {
-vertical-align: top;
+	vertical-align: top;
 }
 figure figcaption {
-border: 1px;
+	border: 1px;
 }
