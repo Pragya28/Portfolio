@@ -80,6 +80,10 @@
 
       <div class="col-sm-8 col-sm-offset-2">
         <p>
+          In this sprint, the plan was to complete working on the user-interface of coding questions. Also to ensure that on refreshing the browser, the student does not lose the submitted data. We also planned to add test configurations which will allow the assessment create to decide whether the student can navigate to previous questions or not. 
+        </p>
+        <p>
+          We also decided to keep the evaluation and results of fill up questions on hold for this sprint.
         </p>
       </div>
 
@@ -101,6 +105,12 @@
 
       <div class="col-sm-8 col-sm-offset-2">
           <p>
+            In this sprint, we continued with the user-interface design and page refresh user-stories and started with a new user-story for test configurations.
+            <ol>
+              <li>As a student, if I refresh the page, I should remain on same page and not lose my progress (Continued from previous sprint).</li>
+              <li>As a student, I should have a user-interface for attempting the assessment which is comfortable to use (Continued from previous sprint).</li>
+              <li>As an assessment creator, I should be able to configure the navigation in the test according to my requirements.</li>
+            </ol>
           </p>
       </div>
 
@@ -122,6 +132,99 @@
 
       <div class="col-sm-8 col-sm-offset-2">
           <p>
+            Since in the previous sprint I was working on the user-interface, so I decided to continue with the same user-story. 
+            <center>
+              <figure role="group">
+                <figure role="group">
+                  <img src="img/sprint5/code-collapse.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Problem statment collapsed, Code editor expanded
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint5/code-expanded.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Problem statment expanded, Code editor collapsed
+                  </figcaption>
+                </figure>
+                <figcaption>
+                  <b>Earlier design:</b> Two column layout - with collapsable columns on button click
+                </figcaption>
+              </figure>
+            </center>
+          </p>
+          <p>
+            In this sprint, I decided to change the button for collapsing and expanding. I completely expanded the column to almost full width of the screen and replaced the other column with a button.
+            <center>
+              <figure role="group">
+                <figure role="group">
+                  <img src="img/sprint6/two column layout.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Both columns of same width
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint6/problem statement.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Problem statment expanded, Code editor collapsed
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint6/code editor.png" alt="" width="75%" style="display: inline;">
+                  <figcaption>
+                    Problem statment collapsed, Code editor expanded
+                  </figcaption>
+                </figure>
+                <figcaption>
+                  <b>New design:</b> Two column layout - with collapsable columns on button click
+                </figcaption>
+              </figure>
+            </center>
+          </p>
+          <p>
+            In problem statement, there is sample input and output. Also it is possible that the assessment creater wants to give some pre-written code to the students. For that I changed the format of question in JSON file.
+            <center>
+              <figure role="group">
+                <figure role="group">
+                  <img src="img/sprint6/json-old.jpg" alt="" width="100%" style="display: inline;">
+                  <figcaption>
+                    Earlier structure of JSON
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint6/json-new.jpg" alt="" width="100%" style="display: inline;">
+                  <figcaption>
+                    New structure of JSON
+                  </figcaption>
+                </figure>
+                <figcaption>
+                  JSON file structure for coding questions
+                </figcaption>
+              </figure>
+            </center>
+          </p>
+          <p>
+            After making changes in the JSON file, the final design for the coding question was like this.
+            <center>
+              <figure>
+                <img src="img/sprint6/final editor.png" alt="" width="75%">
+                <figcaption>
+                  Final design of the Editor
+                </figcaption>
+              </figure>
+            </center>
+          </p>
+          <p>
+            After that I worked on adding backward navigation, i.e, giving an option to allow the student to move back to previous questions. For this I added a boolean to the JSON which will be check whether studenets can go back or not.
+            <center>
+              <figure>
+                <img src="img/sprint6/final editor.png" alt="" width="49%" style="display: inline;">
+                <img src="img/sprint6/final editor - back.png" alt="" width="49%" style="display: inline;">
+                <figcaption>
+                  Without back navigation &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; With back navigation<br>
+                </figcaption>
+              </figure>
+            </center>
           </p>
       </div>
 
@@ -143,6 +246,10 @@
 
       <div class="col-sm-8 col-sm-offset-2">
           <p>
+            In this sprint, we were able to complete the user-interface for the assessment system. Also functionality for not losing the data on refreshing was implemented. 
+          </p>
+          <p>
+            For backward navigation, movement to previous question was implemented along with deactivation of button on first question. However, we need to work on displaying the answers for attempted questions on going back to that question.
           </p>
       </div>
 
