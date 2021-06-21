@@ -80,6 +80,13 @@
 
       <div class="col-sm-8 col-sm-offset-2">
         <p>
+          In this sprint, the plan was to work with the session storage to store the data for coding questions, time taken by student to complete the test and showing already written answers on back navigation.
+        </p>
+        <p>
+          We also worked on completing the result for the fill-ups.
+        </p>
+        <p>
+          Along side, we also fixed some issues which we found during our work.
         </p>
       </div>
 
@@ -101,6 +108,12 @@
 
       <div class="col-sm-8 col-sm-offset-2">
           <p>
+            In this sprint, we continued with the result user-story from sprint 5 which was put on hold for sprint 6. We also started working on new user-stories for storage and time.
+            <ol>
+              <li>As a student, I should be able to know my score and detailed result after completion of the assessment (Continued from sprint 5).</li>
+              <li>In results, as a student, I should be able to see how much time did I took to complete the assessment.</li>
+              <li>As a student, if I go back to a question, I should be able to see and edit the answers of already answered questions.</li>
+            </ol>
           </p>
       </div>
 
@@ -122,7 +135,40 @@
 
       <div class="col-sm-8 col-sm-offset-2">
           <p>
+            In fill-ups we were facing an issue of not being able to give proper indentation where require in the code. To solve this problem we made some changes in the JSON file structure and added an not-editable code editor there, so that we can have proper indentation and syntax highlighting.
+            <center>
+              <figure role="group">
+                <figure role="group">
+                  <img src="img/sprint7/json-old.jpg" alt="" width="100%" style="display: inline;">
+                  <figcaption>
+                    Earlier structure of JSON
+                  </figcaption>
+                </figure>
+                <figure role="group">
+                  <img src="img/sprint7/json-new.jpg" alt="" width="100%" style="display: inline;">
+                  <figcaption>
+                    New structure of JSON
+                  </figcaption>
+                </figure>
+                <figcaption>
+                  JSON file structure for coding questions
+                </figcaption>
+              </figure>
+            </center>
+            These changes in JSON file led to the change in the look of fill-ups as follows:
+            <center>
+              <figure>
+                <img src="img/sprint7/fillups-old.png" alt="" width="49%" style="display: inline;">
+                <img src="img/sprint7/fillups-new.png" alt="" width="49%" style="display: inline;">
+                <figcaption>
+                  Old design of fill-ups &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; New design of fill-ups<br>
+                </figcaption>
+              </figure>
+            </center>
           </p>
+          <p>
+            I also worked on clearing the output window (iframe) for the editor on navigation to next question and showing the updated code in the editor on refresh or coming back to the question.
+          </p>          
       </div>
 
     </div>
@@ -143,6 +189,7 @@
 
       <div class="col-sm-8 col-sm-offset-2">
           <p>
+            With this sprint, the assessment system is almost ready and the only remaining part is execution and evaluation of coding questions. 
           </p>
       </div>
 
